@@ -1,0 +1,188 @@
+:root{
+  --primaryColor: #FDFF9D;
+  --darkGray:#272727;
+  --reddishGray:#4b4b4b;
+  --meduimGray:#91938F;
+  --lightGray:#D3D3D3;
+  --basicFont:20px;
+
+}
+
+body {
+  font-family: "Roboto","Lato", sans-serif;
+  background-color: #1D1D1D;
+  color: #f1f1f1;
+  overflow-x: hidden;
+  
+}
+
+header button{
+float:right;
+margin-top: 2em;
+}
+.btn{
+  color: var(--primaryColor);
+  background: none;
+  border: var(--primaryColor);
+  border-style:  solid ;
+  border-width: .75px;
+  border-radius: 2px;
+}
+
+hr {
+  color: var(--reddishGray)
+}
+
+embed {
+  color: #f1f1f1;
+  height: 20px;
+  width: auto;
+}
+.sidenav {
+
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--darkGray);
+  overflow-x: hidden;
+  padding-top: 20px;
+  text-align: center;
+}
+.logo{
+  width: 160px;
+  height: 160px;
+
+}
+.sidenav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--meduimGray);
+  display: block;
+}
+.gray-font{
+  color: var(--meduimGray);
+}
+
+.colored-font{
+  color: var(--primaryColor);
+}
+.big-font{
+  font-weight: 800;
+}
+
+.shifted{
+  position: relative;
+  left:-4em;
+}
+#hi-word{
+  position: relative;
+  top:-3em;
+}
+
+.sidenav div {
+  margin-top: 60px;
+}
+
+
+
+
+.icon {
+  display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.icon a {
+  padding-left: 15px;
+}
+
+
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+  height: 98vh;
+  margin-left: 220px;
+
+}
+.section{
+  font-size: var(--basicFont);
+}
+
+.display-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.skills{
+  background-color: var(--darkGray);
+  padding: 1em;
+  width: 70%;
+}
+
+.skill{
+  border-bottom:  4px solid var(--meduimGray) ;
+}
+
+#skill-one{
+  border-bottom:  4px solid  #A1ED73 ;
+  max-width: 85%;
+  z-index: 1;
+  position: relative;
+  top: -4px;
+
+}
+#skill-two{
+  border-bottom:  4px solid  #73ABED ;
+  max-width: 90%;
+  z-index: 1;
+  position: relative;
+  top: -4px;
+
+}
+#skill-three{
+  border-bottom:  4px solid  #EDD973;
+  max-width: 75%;
+  z-index: 1;
+  position: relative;
+  top: -4px;
+
+}
+
+
+
+#profile-image{
+  display: block;
+  max-height:  90%;
+  width: auto;
+  position: relative;
+  left:5em;
+  opacity: 0.75;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.html-tag{
+  color: var(--reddishGray);
+}
+
+
+.some-image{
+  background-color: var(--meduimGray);
+  height: 50%;
+  width: 70%;
+  margin-left: 2em;
+
+}
