@@ -1,3 +1,4 @@
+import Udacity from "../assets/udacity.jpg";
 function MySkills() {
   return (
     <section id="know-me" className="container section">
@@ -7,7 +8,6 @@ function MySkills() {
         <br />
 
         <p>
-          
           <span className="html-tag">{"<li>"}</span>
           After graduation from CS Department, I had a passion for art, so I‘ve
           acquired skills in graphic design,
@@ -34,18 +34,34 @@ function MySkills() {
           <div className="skill"> Front End (ES6 ,HTML5 ,Css3)</div>
           <div id="skill-one"></div>
 
-          <div className="skill">
-            React JS
-          </div>
+          <div className="skill">React JS</div>
           <div id="skill-two"></div>
 
-          <div className="skill" >
-            UI /UX Design
-          </div>
+          <div className="skill">UI /UX Design</div>
           <div id="skill-three"></div>
-
         </section>
-        <section>Certificates</section>
+        <div id="Certifications">
+          <h5 className="big-font">Certifications</h5>
+
+          <div className="display-row">
+            <div>
+              <img src={Udacity} className="icon-image" />
+            </div>
+            <div>
+              <a
+                href="https://graduation.udacity.com/confirm/TKSSDNHE"
+                target="_blank">
+                Advanced Front-end Development (React & Redux )
+              </a>
+              <br />
+              <a
+                href="https://graduation.udacity.com/confirm/KPALHPQZ"
+                target="_blank">
+                Front End Web Development Professional
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

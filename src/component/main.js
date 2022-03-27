@@ -2,7 +2,7 @@ import Me from '../assets/me.png'
 function Main (){
     return(
 
-  <section className="container" > 
+  <section  id ="main" className="container" > 
 
 
     <img  id="profile-image"  alt='profile pic'  src={Me}/>

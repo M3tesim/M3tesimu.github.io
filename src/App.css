@@ -4,6 +4,7 @@
   --reddishGray:#4b4b4b;
   --meduimGray:#91938F;
   --lightGray:#D3D3D3;
+  --babyBlue:#5991FF;
   --basicFont:20px;
 
 }
@@ -16,6 +17,9 @@ body {
   
 }
 
+#main{
+  margin-bottom: 5em;
+}
 header button{
 float:right;
 margin-top: 2em;
@@ -122,10 +126,20 @@ justify-content: center;
   flex-direction: column;
 }
 
+.display-row{
+  display: flex;
+  flex-direction: row;
+
+}
 .skills{
   background-color: var(--darkGray);
   padding: 1em;
-  width: 70%;
+  width: 80%;
+  margin-top: 3.5em;
+  margin-left: 2em;
+
+
+
 }
 
 .skill{
@@ -156,7 +170,21 @@ justify-content: center;
   top: -4px;
 
 }
+#Certifications{
+  padding: 1em;
+  margin-left: 1.5em;
 
+}
+
+.icon-image{
+  max-height: 50px;
+  width: auto;
+  display: block;
+  margin-right: .5em;
+  position: relative;
+  top:.25em;
+
+}
 
 
 #profile-image{
@@ -185,4 +213,13 @@ justify-content: center;
   width: 70%;
   margin-left: 2em;
 
+}
+
+a {
+  text-decoration: none;
+  color: var(--babyBlue);
+}
+
+p{
+  text-align: justify;
 }
