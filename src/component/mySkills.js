@@ -22,9 +22,9 @@ function MySkills() {
           <span className="html-tag">{"<li>"}</span>
           Then I’ve decided to focus on a CS career as Front end Developer, so
           I’ve mastered
-          <span className="colored-font">javascript, HTML5, CSS3</span> and
+          <span className="colored-font"> javascript, HTML5, CSS3</span> and
           followed it with modern technologies like
-          <span className="colored-font">React, Redux,</span> and finally
+          <span className="colored-font"> React, Redux,</span> and finally
           management tools like Git&github, web pack and Sass
           <span className="html-tag">{"</li>"}</span>
         </p>
