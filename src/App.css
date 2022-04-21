@@ -223,3 +223,172 @@ a {
 p{
   text-align: justify;
 }
+
+
+.my-projects{
+  display: flex;
+  flex-direction: column;
+  height: 98vh;
+  margin-left: 200px;
+  
+}
+
+.discription{
+  width: 70%;
+  text-align: center;
+
+}
+.image-toggle{
+  background-color: var(--darkGray);
+  padding-top: .5em;
+  height: fit-content;
+
+  
+}
+
+.project-image{
+  display: block;
+  height: 25em;
+width: auto;
+}
+.arrow{
+  font-size: 4rem;
+  padding: .5em;
+  background-image: none;
+  background: none;
+  border: none;
+  color:white;
+ 
+}
+.arrow:hover{
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+button:disabled{
+  color: var(--darkGray);
+}
+button:disabled:hover{
+  color: var(--darkGray);
+}
+.disabled:hover{
+  color: var(--meduimGray);
+}
+
+
+.links{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1em;
+
+}
+
+.menu-button{
+  display: none;
+  position: absolute;
+}
+
+
+.menu-button, .active-menu-button,
+.active-menu-button::before,
+.active-menu-button::after,
+.menu-button::before,
+.menu-button::after {
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+  z-index: 3;
+}
+
+.menu-button::before
+,.active-menu-button::before {
+  content: '';
+  margin-top: 8px;
+}
+
+.menu-button::after,
+.active-menu-button::after {
+  content: '';
+  margin-top: 16px;
+  
+}
+
+.active-menu-button{
+  background: transparent;
+}
+
+.active-menu-button::after{
+  transform: rotate(-45deg);
+  
+}
+.active-menu-button::before{
+  transform: rotate(45deg);
+ top:4px  
+}
+
+@media (max-width: 500px){
+  #profile-image{
+    display: block;
+    min-width: 100%;
+    min-height: auto;
+    
+    opacity: 0.75;
+    position:absolute;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 10px;
+    height: 98vh;
+    margin-left:40px;
+  
+  }
+  .shifted{
+    left:0;
+  }
+  #hi-word{
+    position: relative;
+    top:0;
+  }
+  .menu-button{
+    display: block;
+    position: fixed;
+  
+  }
+
+  .sidenav{
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left:-100%;
+    z-index: 2;
+    overflow-y: hidden;
+    padding-top: 20px;
+    text-align: center;
+    transition: 0.3s;
+
+    
+  }
+
+  .active-nav{
+    display:block;
+    visibility: visible;
+
+    left:0;
+    background-color: #1D1D1D;
+    transition: 0.3s;
+
+
+  }
+
+ 
+ 
+  
+
+
+
+}

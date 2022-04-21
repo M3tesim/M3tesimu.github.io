@@ -1,7 +1,7 @@
 import Udacity from "../assets/udacity.jpg";
 function MySkills() {
   return (
-    <section id="know-me" className="container section">
+    <section id="my-skills" className="container section">
       <div>
         <h1 className="colored-font big-font">My Skills ,,</h1>
         <br />

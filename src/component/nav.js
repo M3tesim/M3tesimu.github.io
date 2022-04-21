@@ -1,41 +1,77 @@
-import logo from '../assets/Logo.png'
-import linkedin from '../assets/linkedin.png'
-import github from '../assets/github.png'
+import logo from "../assets/Logo.png";
+import linkedin from "../assets/linkedin.png";
+import github from "../assets/github.png";
+import React, { Component } from "react";
 
+class Nav extends Component {
+  state = {
+    active: false,
+  };
+  toggleVeiw = () => {
+    console.log(this.state.active);
+    this.setState({
+      active: !this.state.active,
+    });
+  };
 
-function Nav() {
-  return (
-    <nav className="sidenav">
-      <a className="active" href="#home">
-
-        <img  alt='Logo' className="logo" src={logo}/>
-      </a>
+  render() {
+    return (
       <div >
-      <hr/>
+        <div className= {`  ${this.state.active !== true? "active-menu-button":"menu-button"}`} onClick={() => this.toggleVeiw()}>
+        </div>
 
-      <a href="#Knowme">Know me</a>
-      <hr/>
-      <a href="#MySkills">My Skills</a>
-      <hr/>
+        <nav
+          className={` sidenav ${this.state.active !== true && "active-nav"}`}>
+          <a className="active" href="#home">
+            <img alt="Logo" className="logo" src={logo} />
+          </a>
+          <div>
+            <hr />
 
-      <a href="#MyProjects">My Projects</a>
-      <hr/>
+            <a href="#know-me" onClick={() => this.toggleVeiw()}>
+              Know me
+            </a>
+            <hr />
+            <a href="#my-skills" onClick={() => this.toggleVeiw()}>
+              My Skills
+            </a>
+            <hr />
 
-      <a href="#MyArt">My Art</a>
-      <hr/>
+            <a href="#my-projects" onClick={() => this.toggleVeiw()}>
+              My Projects
+            </a>
+            <hr />
 
-      <a href="#MyArt">Contact me</a>
-      <hr/>
+            <a href="#my-art" onClick={() => this.toggleVeiw()}>
+              My Art
+            </a>
+            <hr />
 
+            <a href="#contact-me" onClick={() => this.toggleVeiw()}>
+              Contact me
+            </a>
+            <hr />
+          </div>
+          <div className="icon">
+            <a
+              href="https://www.linkedin.com/in/moatasemshaltout/"
+              target="_blank"
+              rel="noreferrer">
+              {" "}
+              <embed src={linkedin} />
+            </a>
+            <a
+              href="https://github.com/M3tesim"
+              target="_blank"
+              rel="noreferrer">
+              {" "}
+              <embed src={github} />
+            </a>
+          </div>
+        </nav>
       </div>
-      <div className="icon">
-       <a  href="https://www.linkedin.com/in/moatasemshaltout/"  target="_blank" rel="noreferrer">  <embed   src={linkedin} /></a>
-       <a  href="https://github.com/M3tesim" target="_blank" rel="noreferrer">  <embed  src={github} /></a>
-       </div>
-
-
-    </nav>
-  );
+    );
+  }
 }
 
 export default Nav;
