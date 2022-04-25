@@ -7,7 +7,6 @@ function KnowMe (){
 <div>
 <h1 className="colored-font big-font">Know me ,,</h1>
 <br/>
-<br/>
 
 <p> <span className="html-tag">{"<P>"}</span> I’m Moatasem, software Engineer in the morning and artist at night, I’m Specialized in front end development using modern Technologies like React <span className="html-tag">{"</P>"}</span> </p>
 <br/>

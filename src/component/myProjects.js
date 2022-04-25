@@ -35,6 +35,7 @@ class MyProjects extends Component {
     return (
       <section id="my-projects" className=" my-projects section">
         <h1 className="colored-font big-font">My Projects ,,</h1>
+        <br/>
         <div className=" display-column center ">
           <h3 className="colored-font">{`"${projects[this.state.project].name}"`} </h3>
           <p className="discription"> "{projects[this.state.project].discription}" </p>
@@ -63,6 +64,7 @@ class MyProjects extends Component {
 
           </div>
         </div>
+        <br/><br/>
       </section>
     );
   }
