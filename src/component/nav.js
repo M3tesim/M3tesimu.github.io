@@ -5,7 +5,7 @@ import React, { Component } from "react";
 
 class Nav extends Component {
   state = {
-    active: false,
+    active: true,
   };
   toggleVeiw = () => {
     console.log(this.state.active);
@@ -16,7 +16,7 @@ class Nav extends Component {
 
   render() {
     return (
-      <div >
+      <div className="fixed" >
         <div className= {`  ${this.state.active !== true? "active-menu-button":"menu-button"}`} onClick={() => this.toggleVeiw()}>
         </div>
 
