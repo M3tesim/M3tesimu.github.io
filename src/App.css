@@ -316,6 +316,55 @@ z-index: 3;
   top: 4px;
 }
 
+
+.art-image{
+  position:absolute;
+  object-fit: cover;
+  width: 10em;
+  
+}
+
+#my-art{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10em;
+  padding-top: 3em;
+  padding-bottom: 8em;
+
+}
+#coffee{
+  width:9em;
+}
+
+#aqua{
+  transform: translate(-5em, 2em);  
+  height: 8em;
+}
+#bunny{
+  height:8em;
+  transform: translate(4em, -3em);  
+
+
+}
+#art{
+  height:10em;
+  width: 8em;
+
+
+  transform: translate(6em, 4em);  
+}
+#free{
+  transform: translate(-3em, 8em);  
+  height:10em;
+
+}
+#bee{
+  transform: translate(-5em, -2em);  
+width:8em;
+height: 10em;
+}
+
+
 @media (max-width: 500px) {
   #profile-image {
     position: absolute;
@@ -439,4 +488,52 @@ z-index: 3;
     flex-direction: column;
    
   }
+
+  .art-image{
+    position:absolute;
+    object-fit: cover;
+    width: 10em;
+    
+  }
+
+  #my-art{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10em;
+    padding-top: 3em;
+    padding-bottom: 8em;
+
+  }
+  #coffee{
+    width:9em;
+  }
+ 
+  #aqua{
+    transform: translate(-5em, 2em);  
+    height: 8em;
+  }
+  #bunny{
+    height:8em;
+    transform: translate(4em, -3em);  
+
+
+  }
+  #art{
+    height:10em;
+    width: 8em;
+
+
+    transform: translate(6em, 4em);  
+  }
+  #free{
+    transform: translate(-3em, 8em);  
+    height:10em;
+
+  }
+  #bee{
+    transform: translate(-5em, -2em);  
+width:8em;
+height: 10em;
+  }
+
 }

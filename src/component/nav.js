@@ -57,14 +57,12 @@ class Nav extends Component {
               href="https://www.linkedin.com/in/moatasemshaltout/"
               target="_blank"
               rel="noreferrer">
-              {" "}
               <embed src={linkedin} />
             </a>
             <a
               href="https://github.com/M3tesim"
               target="_blank"
               rel="noreferrer">
-              {" "}
               <embed src={github} />
             </a>
           </div>
