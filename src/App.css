@@ -110,6 +110,12 @@ embed {
   height: 80vh;
   margin-left: 9em;
 }
+
+.art-header{
+  margin-left: 5em;
+  margin-top: 5em;
+
+}
 .main-container {
   display: flex;
   height: 98vh;
@@ -117,6 +123,7 @@ embed {
 }
 .section {
   font-size: var(--basicFont);
+  padding-bottom: 5em;
 }
 
 .display-column {
@@ -320,50 +327,69 @@ z-index: 3;
 .art-image{
   position:absolute;
   object-fit: cover;
-  width: 10em;
+  width: 23em;
+  height: auto;
+
+  transform: scale(1);
+
   
 }
+
+
 
 #my-art{
   display: flex;
   justify-content: center;
-  margin-bottom: 10em;
-  padding-top: 3em;
-  padding-bottom: 8em;
+  margin-bottom: 20em;
+
+  margin-top: 7em;
+  margin-bottom: 22em;
+
 
 }
 #coffee{
-  width:9em;
+  width:14em;
+  height: 18em;
+
+  transform: translate(2em, 2em);  
+
 }
 
 #aqua{
-  transform: translate(-5em, 2em);  
-  height: 8em;
+  transform: translate(-12em, 6em);  
+  height: 15em;
+  width: 20em;
+
 }
 #bunny{
-  height:8em;
-  transform: translate(4em, -3em);  
+  height:12em;
+  transform: translate(8em, -3em);  
 
 
 }
 #art{
-  height:10em;
-  width: 8em;
+  height:14em;
+  width: 18em;
 
 
-  transform: translate(6em, 4em);  
+  transform: translate(22em, 4em);  
 }
 #free{
-  transform: translate(-3em, 8em);  
-  height:10em;
+  transform: translate(8em, 4em);  
+  height:18em;
 
 }
 #bee{
-  transform: translate(-5em, -2em);  
-width:8em;
-height: 10em;
+  transform: translate(-10em, -4em);  
+width:15em;
+height: 18em;
 }
 
+#coffee:hover, #aqua:hover,#aqua:hover,#bunny:hover,#art:hover
+,#free:hover,#bee:hover{
+  z-index: 1;
+  box-shadow: 1px 1px 5px var(--darkGray);
+}
 
 @media (max-width: 500px) {
   #profile-image {
@@ -385,6 +411,13 @@ height: 10em;
     margin-left: 10px;
     grid-template-columns: 1fr;
   grid-template-rows:repeat(2, 1fr);
+  }
+
+  .art-header{
+    margin-left: .5em;
+    margin-top: -4em;
+
+  
   }
   
   
@@ -460,8 +493,6 @@ height: 10em;
     margin-left: 0;
   }
   .my-projects {
-    display: flex;
-    flex-direction: column;
     margin-left: 10px;
   }
 
@@ -500,17 +531,21 @@ height: 10em;
     display: flex;
     justify-content: center;
     margin-bottom: 10em;
-    padding-top: 3em;
     padding-bottom: 8em;
 
   }
   #coffee{
     width:9em;
+    height: auto;
+
+  transform: translate(0em, 0em);  
   }
  
   #aqua{
-    transform: translate(-5em, 2em);  
+    transform: translate(-3em, 2em);  
     height: 8em;
+    width:13em;
+
   }
   #bunny{
     height:8em;
@@ -520,10 +555,10 @@ height: 10em;
   }
   #art{
     height:10em;
-    width: 8em;
+    width: 9em;
 
 
-    transform: translate(6em, 4em);  
+    transform: translate(5em, 4em);  
   }
   #free{
     transform: translate(-3em, 8em);  
