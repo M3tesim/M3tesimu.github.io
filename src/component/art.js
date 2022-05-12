@@ -9,7 +9,7 @@ import insta from "../assets/insta.png";
 
 function Art() {
   return (
-    <section className="  section">
+    <section  id="myArt" className="  section">
               <h1 className=" art-header  colored-font big-font">My Art ,,</h1>
 
       <div id="my-art">

@@ -33,6 +33,12 @@ header button {
   border-width: 0.75px;
   border-radius: 2px;
 }
+.btn a{
+  color:  var(--primaryColor);
+}
+.btn a:hover{
+  color:  white;
+}
 
 hr {
   color: var(--reddishGray);
@@ -77,11 +83,12 @@ embed {
 
 .shifted {
   position: relative;
-  left: -4em;
+  left: 3em;
 }
 #hi-word {
   position: relative;
   top: -3em;
+  left:-1em;
 }
 
 .sidenav div {
@@ -123,7 +130,6 @@ embed {
 }
 .section {
   font-size: var(--basicFont);
-  padding-bottom: 5em;
 }
 
 .display-column {
@@ -185,7 +191,7 @@ embed {
 
 #profile-image {
   display: block;
-  max-height: 90%;
+  max-height: 100%;
   width: auto;
   position: relative;
   left: 5em;
@@ -202,12 +208,7 @@ embed {
   color: var(--reddishGray);
 }
 
-.some-image {
-  background-color: var(--meduimGray);
-  height: 50%;
-  width: 70%;
-  margin-left: 2em;
-}
+
 
 a {
   text-decoration: none;
@@ -269,7 +270,9 @@ button:disabled:hover {
 .links {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 1em;
+  padding-top: .5em;
+  padding-bottom :.5em;
+
 }
 
 .menu-button {
@@ -290,7 +293,7 @@ z-index: 3;
 .active-menu-button::after,
 .menu-button::before,
 .menu-button::after {
-  background-color: #edd973;
+  background-color: var(--primaryColor);
   position: absolute;
   height: 4px;
   width: 30px;
@@ -474,14 +477,7 @@ height: 18em;
     background-color: #1d1d1d;
     transition: 0.3s;
   }
-  .some-image {
-    position: relative;
-    background-color: var(--meduimGray);
-    height: 50%;
-    max-width: 100%;
-    width: 100%;
-    left:-2em
-  }
+
   .skills {
     padding: 1em;
     width: 100%;
@@ -491,7 +487,9 @@ height: 18em;
   #Certifications {
     padding: 1em;
     margin-left: 0;
+    font-size:1rem;
   }
+
   .my-projects {
     margin-left: 10px;
   }
@@ -510,6 +508,13 @@ height: 18em;
     border: none;
     color: white;
   }
+
+  .links>a{
+    font-size: 1rem;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+ 
   .image-toggle {
     display: flex;
     background-color: var(--darkGray);
@@ -570,5 +575,8 @@ height: 18em;
 width:8em;
 height: 10em;
   }
-
+#icon-1{
+  width: 100%;
+  height: auto;
+}
 }

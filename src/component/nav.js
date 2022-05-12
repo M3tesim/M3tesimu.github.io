@@ -42,7 +42,7 @@ class Nav extends Component {
             </a>
             <hr />
 
-            <a href="#my-art" onClick={() => this.toggleVeiw()}>
+            <a href="#myArt" onClick={() => this.toggleVeiw()}>
               My Art
             </a>
             <hr />
