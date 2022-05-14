@@ -57,7 +57,6 @@ embed {
   left: 0;
   background-color: var(--darkGray);
   overflow-x: hidden;
-  padding-top: 20px;
   text-align: center;
 }
 .logo {
@@ -99,9 +98,17 @@ embed {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-left: 1rem;
 }
 .icon a {
-  padding-left: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.icon a:hover{
+  background-color: var(--meduimGray);
+  border-radius: 60%;
+  height: fit-content;
 }
 
 .sidenav a:hover {
@@ -206,6 +213,9 @@ embed {
 }
 .html-tag {
   color: var(--reddishGray);
+  font-family: 'Bradley Hand',cursive;
+  font-style: italic;
+
 }
 
 
@@ -228,21 +238,24 @@ p {
 
 .discription {
   width: 70%;
+  height: 5em;
   text-align: center;
 }
 .image-toggle {
   background-color: var(--darkGray);
   padding-top: 0.5em;
-  height: fit-content;
  
 }
 
+
+
 .project-image {
   display: block;
-  height: 25em;
-  width: auto;
-  object-fit: contain;
   align-self: center;
+  height: 20em;
+  width:40em;
+ object-fit: cover;
+ object-position: top;
 
 }
 .arrow {
@@ -302,10 +315,15 @@ z-index: 3;
   z-index: 3;
 }
 
-.menu-button::before,
-.active-menu-button::before {
+.menu-button::before
+ {
   content: "";
   margin-top: 8px;
+}
+
+.active-menu-button::before {
+  content: "";
+  margin-top: 11px;
 }
 
 .menu-button::after,
@@ -495,10 +513,15 @@ height: 18em;
   }
 
   .project-image {
-    height:auto;
-    width: 65vw;
+    height: 25vh;
+    width:70vw;
+  
 
   }
+  .discription {
+    height: 10em;
+  }
+
 
   .arrow {
     font-size: 2.5rem;
