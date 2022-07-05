@@ -1,11 +1,17 @@
 import icon1 from '../assets/programin-icon1.png' ;
+function KnowMe (props){
 
-function KnowMe (){
+
+  const {visibility,myRef}=props
+
+  
+
+
     return(
 
-  <section id="know-me" className="container section" > 
+  <section id="know-me" className="container section"  ref={myRef}> 
 
-<div>
+<div >
 <h1 className="colored-font big-font">Know me ,,</h1>
 <br/>
 

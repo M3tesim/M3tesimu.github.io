@@ -1,65 +1,64 @@
 import { projects } from "../data";
-import React, { Component } from "react";
+import React, { useState } from "react";
 
-class MyProjects extends Component {
-    state={
-        project:0
-    }
+function MyProjects (props) {
+  const {visibility,myRef}=props
 
-    rightClick=()=>{
-        if (this.state.project < projects.length-1){
-            this.setState({
-                project:this.state.project+1
-            })
+
+  const[projectNum,setProjectNum]=useState(0)
+  
+
+ const rightClick=()=>{
+        if (projectNum < projects.length-1){
+          setProjectNum(projectNum+1)
+         
         }
-        console.log("Right Clicked")
-        console.log(this.state.project)
-
+        console.log("Right Clicked"+projectNum)
 
     }
 
-    leftClick=()=>{
-        if (this.state.project > 0){
-            this.setState({
-                project:this.state.project-1
-            })
+   const leftClick=()=>{
+        if (projectNum > 0){
+          setProjectNum(projectNum-1)
+
     
         }
-        console.log("left Clicked")
-        console.log(this.state.project)
+        console.log("left Clicked"+projectNum)
+
+     
 
     }
 
 
-  render() {
+  
     return (
       <section id="my-projects" className=" my-projects section">
         <h1 className="colored-font big-font">My Projects ,,</h1>
         <br/>
         <div className=" display-column center ">
-          <h3 className="colored-font">{`"${projects[this.state.project].name}"`} </h3>
-          <p className="discription"> "{projects[this.state.project].discription}" </p>
+          <h3 className="colored-font">{`"${projects[projectNum]?.name}"`} </h3>
+          <p className="discription"> "{projects[projectNum]?.discription}" </p>
           <div className="display-row center">
               <br/>
               
-            <button  onClick={()=>this.leftClick()} className="arrow" disabled={this.state.project===0}> {"<"} </button>
+            <button  onClick={()=>leftClick()} className="arrow" disabled={projectNum===0}> {"<"} </button>
 
             <div className="image-toggle">
               <img
-                src={projects[this.state.project].image}
-                alt={projects[this.state.project].name}
+                src={projects[projectNum]?.image}
+                alt={projects[projectNum]?.name}
                 className="project-image"
               />
               <div className="links">
-                <a href={projects[this.state.project].github} target="_blank">
+                <a href={projects[projectNum]?.github} target="_blank" rel="noreferrer">
                   See project on github⤤
                 </a>
-                <a href={projects[this.state.project].live} target="_blank" className={` ${projects[this.state.project].live===null&&"gray-font disabled"}` } >
+                <a href={projects[projectNum]?.live} target="_blank" rel="noreferrer" className={` ${projects[projectNum]?.live===null&&"gray-font disabled"}` } >
                   Live Preview⤤
                 </a>
               </div>
             </div>
-            <button onClick={()=>this.rightClick()} className="arrow" disabled={this.state.project===projects.length-1}> {">"} </button>
+            <button onClick={()=>rightClick()} className="arrow" disabled={projectNum===projects.length-1}> {">"} </button>
             <br/>
 
           </div>
@@ -67,7 +66,7 @@ class MyProjects extends Component {
         <br/><br/>
       </section>
     );
-  }
+  
 }
 
 export default MyProjects;

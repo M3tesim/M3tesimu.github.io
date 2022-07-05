@@ -1,8 +1,10 @@
 
-function ContactMe (){
+function ContactMe (props){
+  const {visibility,myRef}=props
+
     return(
 
-  <section id="contact-me" className="container section" > 
+  <section id="contact-me" className="container section" ref={myRef}> 
 
 <div>
 <h1 className="colored-font big-font">Contact me ,,</h1>

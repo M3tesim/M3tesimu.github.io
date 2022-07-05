@@ -7,9 +7,11 @@ import freeURbody from "../assets/myArt/freeURbody.png";
 import behance from "../assets/behance.png";
 import insta from "../assets/insta.png";
 
-function Art() {
+function Art(props) {
+  const {visibility,myRef}=props
+
   return (
-    <section  id="myArt" className="  section">
+    <section  id="myArt" className="  section" ref={myRef}>
               <h1 className=" art-header  colored-font big-font">My Art ,,</h1>
 
       <div id="my-art">
@@ -37,10 +39,10 @@ function Art() {
       <div className="center ">
         <span className="colored-font  "> Find More </span>
         <div className="icon">
-          <a href="https://www.behance.net/m3tsm" target="_blank">
+          <a href="https://www.behance.net/m3tsm" target="_blank" rel="noreferrer">
             <embed src={behance} />
           </a>
-          <a href="https://www.instagram.com/tasim_sh/" target="_blank">
+          <a href="https://www.instagram.com/tasim_sh/" target="_blank" rel="noreferrer">
             <embed src={insta} />
           </a>
         </div>

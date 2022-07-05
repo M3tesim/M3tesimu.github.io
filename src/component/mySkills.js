@@ -1,13 +1,18 @@
 import Udacity from "../assets/udacity.jpg";
-function MySkills() {
-  return (
-    <section id="my-skills" className="container section">
-      <div>
-        <h1 className="colored-font big-font">My Skills ,,</h1>
-        <br />
-        <br />
 
-        <p>
+
+function MySkills(props) {
+
+
+const {visibility,myRef}=props
+
+  return (
+    <section   ref={myRef} id="my-skills" className={`container section `}>
+      <div >
+        <h1 className={`colored-font big-font ${visibility?'animate':""}`}>My Skills ,,</h1>
+        <br />
+        <br />
+        <p className={` textRise ${visibility?'animate2':""}`}>
           <span className="html-tag">{"<li>"}</span>
           After graduation from CS Department, I had a passion for art, so I‘ve
           acquired skills in graphic design,
@@ -45,18 +50,20 @@ function MySkills() {
 
           <div className="display-row">
             <div>
-              <img src={Udacity} className="icon-image" />
+              <img src={Udacity} className="icon-image" alt="udacity logo" />
             </div>
             <div>
               <a
                 href="https://graduation.udacity.com/confirm/TKSSDNHE"
-                target="_blank">
+                target="_blank"
+                rel="noreferrer">
                 Advanced Front-end Development (React & Redux )
               </a>
               <br />
               <a
                 href="https://graduation.udacity.com/confirm/KPALHPQZ"
-                target="_blank">
+                target="_blank"
+                rel="noreferrer">
                 Front End Web Development Professional
               </a>
             </div>
