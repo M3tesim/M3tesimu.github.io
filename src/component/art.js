@@ -12,9 +12,9 @@ function Art(props) {
 
   return (
     <section  id="myArt" className="  section" ref={myRef}>
-              <h1 className=" art-header  colored-font big-font">My Art ,,</h1>
+              <h1 className= {` art-header colored-font big-font ${visibility?'animate':""}`}>My Art ,,</h1>
 
-      <div id="my-art">
+      <div id="my-art" className={`  textRise2 ${visibility?'animate2':""}`}>
 
         <img className="art-image" id="bee" src={beeGirl} alt="Bee character" />
         <img
@@ -38,7 +38,7 @@ function Art(props) {
       <br />
       <div className="center ">
         <span className="colored-font  "> Find More </span>
-        <div className="icon">
+        <div  className={` icon textRise2 ${visibility?'animate2':""}`}>
           <a href="https://www.behance.net/m3tsm" target="_blank" rel="noreferrer">
             <embed src={behance} />
           </a>

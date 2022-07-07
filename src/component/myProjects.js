@@ -32,13 +32,16 @@ function MyProjects (props) {
 
   
     return (
-      <section id="my-projects" className=" my-projects section">
-        <h1 className="colored-font big-font">My Projects ,,</h1>
+      <section id="my-projects" className=" my-projects section" ref={myRef}>
+        <h1 className={`colored-font big-font ${visibility?'animate':""}`} >My Projects ,,</h1>
         <br/>
         <div className=" display-column center ">
+          <div className={`  display-column center textRise ${visibility?'animate2':""}`}>
           <h3 className="colored-font">{`"${projects[projectNum]?.name}"`} </h3>
           <p className="discription"> "{projects[projectNum]?.discription}" </p>
-          <div className="display-row center">
+          </div >
+          
+          <div className={`  display-row center textRise2 ${visibility?'animate2':""}`}>
               <br/>
               
             <button  onClick={()=>leftClick()} className="arrow" disabled={projectNum===0}> {"<"} </button>

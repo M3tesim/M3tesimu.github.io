@@ -23,7 +23,7 @@ const {visibility,myRef}=props
         </p>
         <br />
 
-        <p>
+        <p className={` textRise ${visibility?'animate2':""}`}>
           <span className="html-tag">{"<li>"}</span>
           Then I’ve decided to focus on a CS career as Front end Developer, so
           I’ve mastered
@@ -34,8 +34,9 @@ const {visibility,myRef}=props
           <span className="html-tag">{"</li>"}</span>
         </p>
       </div>
-      <div className="display-column ">
-        <section className="skills  ">
+      <div className="display-column " >
+        <section    className={` skills textRise2 ${visibility?'animate2':""}`}>
+
           <div className="skill"> Front End (ES6 ,HTML5 ,Css3)</div>
           <div id="skill-one"></div>
 
@@ -45,7 +46,7 @@ const {visibility,myRef}=props
           <div className="skill">UI /UX Design</div>
           <div id="skill-three"></div>
         </section>
-        <div id="Certifications">
+        <div id="Certifications" className={`  textRise2 ${visibility?'animate2':""}`}>
           <h5 className="big-font">Certifications</h5>
 
           <div className="display-row">

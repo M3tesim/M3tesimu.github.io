@@ -35,7 +35,8 @@ function Nav(props) {
             name="know-me"
             className={`sidenav-link ${
               KnowMeVisibility ? "active-section" : ""
-            }`}            onClick={() => this.toggleVeiw()}>
+            }`}
+            onClick={() => this.toggleVeiw()}>
             Know me
           </a>
           <hr />
@@ -43,7 +44,7 @@ function Nav(props) {
             href="#my-skills"
             name="my-skills"
             className={`sidenav-link ${
-              mySkillsVisibility ? "active-section" : ""
+              mySkillsVisibility ?  "active-section": ""
             }`}
             onClick={() => this.toggleVeiw()}>
             My Skills
@@ -55,7 +56,8 @@ function Nav(props) {
             name="my-projects"
             className={`sidenav-link ${
               MyProjectsVisibility ? "active-section" : ""
-            }`}            onClick={() => this.toggleVeiw()}>
+            }`}
+            onClick={() => this.toggleVeiw()}>
             My Projects
           </a>
           <hr />
@@ -63,9 +65,8 @@ function Nav(props) {
           <a
             href="#my-art"
             name="myArt"
-            className={`sidenav-link ${
-              ArtVisibility ? "active-section" : ""
-            }`}            onClick={() => this.toggleVeiw()}>
+            className={`sidenav-link ${ArtVisibility ? "active-section" : ""}`}
+            onClick={() => this.toggleVeiw()}>
             My Art
           </a>
           <hr />
@@ -75,7 +76,8 @@ function Nav(props) {
             name="contact-me"
             className={`sidenav-link ${
               ContactMeVisibility ? "active-section" : ""
-            }`}            onClick={() => this.toggleVeiw()}>
+            }`}
+            onClick={() => this.toggleVeiw()}>
             Contact me
           </a>
           <hr />

@@ -11,11 +11,26 @@ import ContactMe from "./component/contactMe";
 import { useInView } from "react-intersection-observer";
 
 function App() {
-  const { ref: mySkillsRef, inView: mySkillsVisibility } = useInView();
-  const { ref: KnowMeRef, inView: KnowMeVisibility } = useInView();
-  const { ref: MyProjectsRef, inView: MyProjectsVisibility } = useInView();
-  const { ref: ArtRef, inView: ArtVisibility } = useInView();
-  const { ref: ContactMeRef, inView: ContactMeVisibility } = useInView();
+  const { ref: mySkillsRef, inView: mySkillsVisibility } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+  const { ref: KnowMeRef, inView: KnowMeVisibility } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+  const { ref: MyProjectsRef, inView: MyProjectsVisibility } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+  const { ref: ArtRef, inView: ArtVisibility } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+  const { ref: ContactMeRef, inView: ContactMeVisibility } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
 
   return (
     <div className="App">
