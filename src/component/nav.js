@@ -63,7 +63,7 @@ function Nav(props) {
           <hr />
 
           <a
-            href="#my-art"
+            href="#myArt"
             name="myArt"
             className={`sidenav-link ${ArtVisibility ? "active-section" : ""}`}
             onClick={() => this.toggleVeiw()}>
