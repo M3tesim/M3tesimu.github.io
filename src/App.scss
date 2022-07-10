@@ -491,7 +491,7 @@ form{
 
   textarea{
     min-width: 40vw;
-    min-height: 15rem;
+    min-height: 12rem;
     padding-left: .5em;
     padding-top: .5rem;
   }
@@ -517,9 +517,9 @@ form{
 #image-map{
   position: relative;
   opacity: .7;
-  top:-5rem;
+  top:-2rem;
   max-width:50vw;
-  min-height: 90vh;
+  min-height: 80vh;
   object-fit: cover;
   object-position: center top;
   margin-left: 2rem;

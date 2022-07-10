@@ -34,7 +34,7 @@ function ContactMe(props) {
   }
   */
   const submit = (e)=>{
-    alert("form submitties");
+    alert("Thank you for contacting me I will respond soon :)");
   }
 
 
@@ -46,6 +46,13 @@ function ContactMe(props) {
           Contact me ,,
         </h1>
         <br />
+
+        <p className={` textRise ${visibility ? "animate2" : ""}`}>
+          {" "}
+          <span className="html-tag">{"<P>"}</span> I am available for freelance work,
+          if you have anything in mind contact me and we will work together to make it happen{" "}
+          <span className="html-tag">{"</P>"}</span>{" "}
+        </p>
         <form    onSubmit={(e)=>submit(e)} className={`  textRise2 ${visibility ? "animate2" : ""}`} action="https://formsubmit.co/shaltoutDesigns@Gmail.com" method="POST">
           <div>
             <input name="name" className="input" type="text" placeholder="    Name" required />
