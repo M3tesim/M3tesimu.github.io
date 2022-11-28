@@ -5,7 +5,7 @@ import Nav from "./component/nav";
 import Main from "./component/main";
 import KnowMe from "./component/knowMe";
 import MySkills from "./component/mySkills";
-import MyProjects from "./component/myProjects";
+import Cards from "./component/cards";
 import Art from "./component/art";
 import ContactMe from "./component/contactMe";
 import { useInView } from "react-intersection-observer";
@@ -43,8 +43,9 @@ function App() {
       />
       <Main />
       <KnowMe  visibility={KnowMeVisibility} myRef={KnowMeRef}/>
+
       <MySkills visibility={mySkillsVisibility} myRef={mySkillsRef} />
-      <MyProjects  visibility={MyProjectsVisibility} myRef={MyProjectsRef}/>
+      <Cards  visibility={MyProjectsVisibility} myRef={MyProjectsRef}/>
       <Art visibility={ArtVisibility} myRef={ArtRef} />
       <ContactMe visibility={ContactMeVisibility} myRef={ContactMeRef} />
     </div>
