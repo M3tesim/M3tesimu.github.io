@@ -11,10 +11,10 @@ function Art(props) {
   const {visibility,myRef}=props
 
   return (
-    <section  id="myArt" className="  section" ref={myRef}>
-              <h1 className= {` art-header colored-font big-font ${visibility?'animate':""}`}>My Art ,,</h1>
+    <section  id="myArt" className="section container" ref={myRef}>
+    <h1 className= {`colored-font big-font ${visibility?'animate':""}`}>My Art ,,</h1>
 
-      <div id="my-art" className={`  textRise2 ${visibility?'animate2':""}`}>
+      <div id="my-art" className={`textRise2 ${visibility?'animate2':""}`}>
 
         <img className="art-image" id="bee" src={beeGirl} alt="Bee character" />
         <img

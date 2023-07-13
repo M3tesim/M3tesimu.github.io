@@ -22,7 +22,6 @@ function Nav() {
           <img alt="Logo" className="logo" src={logo} />
         </a>
         <div>
-          <hr />
 
           <a
             href="#know-me"
@@ -67,7 +66,6 @@ function Nav() {
             onClick={() => toggleVeiw(!active)}>
             Contact me
           </a>
-          <hr />
         </div>
         <div className="icon">
           <a
