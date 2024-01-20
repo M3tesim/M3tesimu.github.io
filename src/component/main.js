@@ -25,7 +25,7 @@ function Main() {
             {" "}
             <a
               className="links"
-              href="https://docs.google.com/document/d/1YKnWZzStboZ20Xi_I5m2dbzhM6_LpPqpH2Tk8FGQxGE/edit?usp=sharing"
+              href="https://drive.google.com/file/d/188JKlvhzsCDapBbNS0drSWHaTRUy17vB/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >

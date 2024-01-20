@@ -8,14 +8,15 @@ import behance from "../assets/behance.png";
 import insta from "../assets/insta.png";
 
 function Art(props) {
-  const {visibility,myRef}=props
+  const { visibility, myRef } = props;
 
   return (
-    <section  id="myArt" className="section container" ref={myRef}>
-    <h1 className= {`colored-font big-font ${visibility?'animate':""}`}>My Art ,,</h1>
+    <section id="myArt" className="section container" ref={myRef}>
+      <h1 className={`colored-font big-font ${visibility ? "animate" : ""}`}>
+        My Art ,,
+      </h1>
 
-      <div id="my-art" className={`textRise2 ${visibility?'animate2':""}`}>
-
+      <div id="my-art" className={`textRise2 ${visibility ? "animate2" : ""}`}>
         <img className="art-image" id="bee" src={beeGirl} alt="Bee character" />
         <img
           className="art-image"
@@ -38,15 +39,22 @@ function Art(props) {
       <br />
       <div className="center ">
         <span className="colored-font  "> Find More </span>
-        <div  className={` icon textRise2 ${visibility?'animate2':""}`}>
-          <a href="https://www.behance.net/m3tsm" target="_blank" rel="noreferrer">
+        <div className={` icon textRise2 ${visibility ? "animate2" : ""}`}>
+          <a
+            href="https://www.behance.net/m3tsm"
+            target="_blank"
+            rel="noreferrer"
+          >
             <embed src={behance} />
           </a>
-          <a href="https://www.instagram.com/tasim_sh/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.instagram.com/tasim_sh/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <embed src={insta} />
           </a>
         </div>
-       
       </div>
     </section>
   );

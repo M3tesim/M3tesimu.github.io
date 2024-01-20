@@ -1,43 +1,11 @@
-import map from '../assets/mapOfEgypt.png'
-import{useState} from "react";
+import map from "../assets/mapOfEgypt.png";
 
 function ContactMe(props) {
   const { visibility, myRef } = props;
-  const [status,setStatus]=useState("submit")
 
- /* const handleSubmit = async (e)=>{
-    e.preventDefault();
-    setStatus("sending...");
-
-    const {name, email, subject,message}=e.target.elements;
-
-    let details={
-      name:name.value,
-      email:email.value,
-      message:message.value
-    };
-
-    let response = await fetch ("http://localhost:3000/website",{
-      method:"POST",
-      headers:{
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-
-    })
-    setStatus("Submit");
-    let result = await response.json();
-
-    alert(result.status)
-
-
-  }
-  */
-  const submit = (e)=>{
+  const submit = (e) => {
     alert("Thank you for contacting me I will respond soon :)");
-  }
-
-
+  };
 
   return (
     <section id="contact-me" className="container section" ref={myRef}>
@@ -47,43 +15,71 @@ function ContactMe(props) {
         </h1>
         <br />
 
-        <p className={` textRise ${visibility ? "animate2" : ""}`}>
+        <p className={`textRise ${visibility ? "animate2" : ""}`}>
           {" "}
-          <span className="html-tag">{"<P>"}</span> I am available for freelance work,
-          if you have anything in mind contact me and we will work together to make it happen{" "}
-          <span className="html-tag">{"</P>"}</span>{" "}
+          <span className="html-tag">{"<P>"}</span> I am available for freelance
+          work, if you have anything in mind contact me and we will work
+          together to make it happen <span className="html-tag">{"</P>"}</span>{" "}
         </p>
-        <form    onSubmit={(e)=>submit(e)} className={`  textRise2 ${visibility ? "animate2" : ""}`} action="https://formsubmit.co/shaltoutDesigns@Gmail.com" method="POST">
+        <form
+          onSubmit={(e) => submit(e)}
+          className={`textRise2 ${visibility ? "animate2" : ""}`}
+          action="https://formsubmit.co/shaltoutDesigns@Gmail.com"
+          method="POST"
+        >
           <div>
-            <input name="name" className="input" type="text" placeholder="    Name" required />
+            <input
+              name="name"
+              className="input"
+              type="text"
+              placeholder="    Name"
+              required
+            />
 
             <span></span>
-            <input  name ="e-mail"className="input" type="email" placeholder="   E-Mail"  required/>
-          </div> 
+            <input
+              name="e-mail"
+              className="input"
+              type="email"
+              placeholder="   E-Mail"
+              required
+            />
+          </div>
 
           <br />
-          <input  name ="subject" id="subject" className="input" type="text" placeholder="    Subject" required />
-
+          <input
+            name="subject"
+            id="subject"
+            className="input"
+            type="text"
+            placeholder="    Subject"
+            required
+          />
 
           <div>
-
-            <textarea name="Content" className="input" placeholder="    Message" required />
+            <textarea
+              name="Content"
+              className="input"
+              placeholder="    Message"
+              required
+            />
           </div>
           <br />
           <button type="submit" className="btn">
-          
             Send Message
           </button>
 
-          <input type="hidden" name="_next" value="https://m3tesim.github.io/website/"/>
-
-
+          <input
+            type="hidden"
+            name="_next"
+            value="https://m3tesim.github.io/website/"
+          />
         </form>
         <br />
       </div>
 
       <div className={` textRise  ${visibility ? "animate2" : ""}`}>
-        <img  id="image-map" src={map}/>
+        <img id="image-map" src={map} alt="Map To Cairo" />
       </div>
     </section>
   );

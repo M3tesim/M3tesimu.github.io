@@ -15,9 +15,7 @@
   100% {
     transform: translateX(0);
   }
-
 }
-
 
 @keyframes textRise {
   0% {
@@ -30,7 +28,6 @@
     opacity: 1;
   }
 }
-
 
 .App {
   right: 0;
@@ -58,17 +55,11 @@ header button {
   border-width: 0.75px;
   border-radius: 2px;
 }
-.btn a{
-  color:  var(--primaryColor);
+.btn a {
+  color: var(--primaryColor);
 }
-.btn a:hover{
-  color:  white;
-}
-
-hr {
-  border-color: var(--darkGray);
-  width: 60%;
-  
+.btn a:hover {
+  color: white;
 }
 
 embed {
@@ -90,28 +81,22 @@ embed {
   width: 160px;
   height: 160px;
 }
+.sidenav-link-container {
+  padding-inline: 0.5rem;
+}
+
 .sidenav-link {
   text-decoration: none;
   font-size: 18px;
   color: var(--meduimGray);
   display: block;
+  border-bottom: 1px solid var(--meduimGray);
+  padding: 1rem;
 
-
-  &.active-section{
-    color:var(--primaryColor)
-   
-
-   
+  &.active-section {
+    color: var(--primaryColor);
   }
- 
-
-  
 }
-
-
-
-
-
 
 .gray-font {
   color: var(--meduimGray);
@@ -122,14 +107,11 @@ embed {
 }
 .big-font {
   font-weight: 800;
-
 }
 
 .shifted {
   z-index: 1;
-  
 }
-
 
 .sidenav div {
   margin-top: 60px;
@@ -146,7 +128,7 @@ embed {
   padding-left: 5px;
   padding-top: 5px;
 }
-.icon a:hover{
+.icon a:hover {
   background-color: var(--meduimGray);
   border-radius: 60%;
   height: fit-content;
@@ -158,39 +140,33 @@ embed {
 
 .container {
   display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   column-gap: 10px;
   max-width: 80vw;
   height: 75vh;
   margin-left: 9em;
-
 }
 
-
- .cards-container{
-
+.cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   gap: 2rem;
-padding-inline: 5rem;
-row-gap: 4rem;
-
+  row-gap: 4rem;
 }
 
-
-.card{
+.card {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
   width: 22rem;
-  height:30rem ;
+  height: 30rem;
   background-color: var(--darkGray);
-  padding-inline: .6rem;
+  padding-inline: 0.6rem;
   padding-top: 1rem;
 }
-.card-image{
+.card-image {
   width: 20rem;
   height: 13rem;
 }
@@ -200,37 +176,34 @@ row-gap: 4rem;
   text-align: center;
 }
 #my-projects {
-  margin-left: 30rem;
   display: flex;
   flex-direction: column;
-  gap:5rem;
-  min-height: 90vh;
-  margin-left: 200px;
+  gap: 5rem;
+  min-height: 130vh;
+  margin-left: 12em;
 }
-.textRise{
+.textRise {
   opacity: 0;
-  transform:translateY(5rem);
-  transition: opacity 1s ease-out .3s,transform 1.2s ease-out .3s;
+  transform: translateY(5rem);
+  transition: opacity 1s ease-out 0.3s, transform 1.2s ease-out 0.3s;
 }
-.textRise2{
+.textRise2 {
   opacity: 0;
-  transform:translateY(5rem);
-  transition: opacity 1s ease-out .6s, transform 1s ease-out .6s;
+  transform: translateY(5rem);
+  transition: opacity 1s ease-out 0.6s, transform 1s ease-out 0.6s;
 }
 
-.animate{
+.animate {
   animation: 1s ease-out 0s 1 textRise;
 }
-.animate2{
-opacity:1;
-transform:translateY(0rem);
-
+.animate2 {
+  opacity: 1;
+  transform: translateY(0rem);
 }
 
-.art-header{
+.art-header {
   margin-left: 5em;
   margin-top: 5em;
-
 }
 .main-container {
   display: flex;
@@ -257,7 +230,6 @@ transform:translateY(0rem);
   margin-top: 3.5em;
   margin-left: 2em;
 }
-
 
 .skill {
   border-bottom: 4px solid var(--meduimGray);
@@ -315,12 +287,9 @@ transform:translateY(0rem);
 }
 .html-tag {
   color: var(--reddishGray);
-  font-family: 'Bradley Hand',cursive;
+  font-family: "Bradley Hand", cursive;
   font-style: italic;
-
 }
-
-
 
 a {
   text-decoration: none;
@@ -331,25 +300,18 @@ p {
   text-align: justify;
 }
 
-
-
-
 .image-toggle {
   background-color: var(--darkGray);
   padding-top: 0.5em;
- 
 }
-
-
 
 .project-image {
   display: block;
   align-self: center;
   height: 20em;
-  width:40em;
- object-fit: cover;
- object-position: top;
-
+  width: 40em;
+  object-fit: cover;
+  object-position: top;
 }
 .arrow {
   font-size: 4rem;
@@ -376,18 +338,17 @@ button:disabled:hover {
 .links {
   display: flex;
   justify-content: space-evenly;
-  padding-top: .5em;
-  padding-bottom :.5em;
-
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .menu-button {
   display: none;
   margin: 0.75em;
 }
-.fixed{
+.fixed {
   position: fixed;
-z-index: 3;
+  z-index: 3;
 }
 .active-menu-button {
   margin: 0.75em;
@@ -408,8 +369,7 @@ z-index: 3;
   z-index: 3;
 }
 
-.menu-button::before
- {
+.menu-button::before {
   content: "";
   margin-top: 8px;
 }
@@ -437,146 +397,144 @@ z-index: 3;
   top: 4px;
 }
 
-
-.art-image{
-  position:absolute;
+.art-image {
+  position: absolute;
   object-fit: cover;
   width: 23em;
   height: auto;
 
   transform: scale(1);
-
-  
 }
 
-
-
-#my-art{
+#my-art {
   display: flex;
   justify-content: center;
-  margin-bottom: 20em;
+  padding-top: 10em;
 
-  margin-top: 7em;
   margin-bottom: 22em;
-
 }
-#myArt{margin-bottom: 8em;
-display: flex;
-flex-direction: column;
-min-height: 120vh;}
+#myArt {
+  margin-bottom: 10em;
+  margin-top: 10em;
 
-#coffee{
-  width:14em;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#coffee {
+  width: 14em;
   height: 18em;
 
-  transform: translate(2em, 2em);  
-
+  transform: translate(2em, 2em);
 }
 
-#aqua{
-  transform: translate(-12em, 6em);  
+#aqua {
+  transform: translate(-12em, 6em);
   height: 15em;
   width: 20em;
-
 }
-#bunny{
-  height:12em;
-  transform: translate(8em, -3em);  
-
-
+#bunny {
+  height: 12em;
+  transform: translate(8em, -3em);
 }
-#art{
-  height:14em;
+#art {
+  height: 14em;
   width: 18em;
 
-
-  transform: translate(22em, 4em);  
+  transform: translate(22em, 4em);
 }
-#free{
-  transform: translate(8em, 4em);  
-  height:18em;
-
+#free {
+  transform: translate(8em, 4em);
+  height: 18em;
 }
-#bee{
-  transform: translate(-10em, -4em);  
-width:15em;
-height: 18em;
+#bee {
+  transform: translate(-10em, -4em);
+  width: 15em;
+  height: 18em;
 }
 
-#coffee:hover, #aqua:hover,#aqua:hover,#bunny:hover,#art:hover
-,#free:hover,#bee:hover{
+#coffee:hover,
+#aqua:hover,
+#aqua:hover,
+#bunny:hover,
+#art:hover,
+#free:hover,
+#bee:hover {
   z-index: 1;
   box-shadow: 1px 1px 5px var(--darkGray);
 }
 
-form{
-
-  :first-child{
+form {
+  :first-child {
     display: flex;
     flex-direction: row;
-   justify-content: space-around;
+    justify-content: space-around;
   }
-  :nth-child(2){
-    margin-left:4em;
+  :nth-child(2) {
+    margin-left: 4em;
   }
 
-  textarea{
+  textarea {
     min-width: 40vw;
     min-height: 12rem;
-    padding-left: .5em;
-    padding-top: .5rem;
+    padding-left: 0.5em;
+    padding-top: 0.5rem;
   }
-  #subject{
+  #subject {
     min-width: 40vw;
-    margin-bottom:2rem ;
+    margin-bottom: 2rem;
   }
 
-  .input{
+  .input {
     background-color: var(--darkGray);
     border: none;
     color: #d3d3d3;
     width: 45%;
     height: 3rem;
-  
   }
 
-  button{
-     float: right;
+  button {
+    float: right;
   }
 }
 
-#image-map{
+#image-map {
   position: relative;
-  opacity: .7;
-  top:-2rem;
-  max-width:50vw;
+  opacity: 0.7;
+  top: -2rem;
+  max-width: 50vw;
   min-height: 80vh;
   object-fit: cover;
   object-position: center top;
   margin-left: 2rem;
-  
 }
 
-@media (max-width: 500px) {
+@media (min-width: 500px) {
+  .cards-container {
+    justify-content: center;
+    place-items: center;
+  }
+}
 
-
+@media (max-width: 375px) {
+  #myArt {
+    margin-bottom: 5em;
+    margin-top: 5em;
+  }
   #my-projects {
-    margin-left: 8px;
-    gap:5rem;
+    margin-left: 10px;
+    gap: 5rem;
   }
 
-  .cards-container{
-
+  .cards-container {
     display: grid;
+    padding-inline: 0px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 2rem;
-  padding-inline: 2rem;
-  row-gap: 4rem;
-  
-
+    row-gap: 4rem;
   }
-  .card{
+  .card {
     height: 31rem;
   }
   #profile-image {
@@ -584,11 +542,10 @@ form{
     min-height: 100vh;
     max-width: 100vw;
     width: 100vw;
-    object-fit:cover;
+    object-fit: cover;
     left: 0;
     padding: 0;
     margin: 0;
-    
   }
 
   .container {
@@ -598,33 +555,29 @@ form{
     min-height: 100vh;
     margin-left: 8px;
     grid-template-columns: 1fr;
-  grid-template-rows:repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
-  
 
   .main-container {
     display: flex;
     height: 100vh;
     margin-left: 0;
-
   }
- .main-container .center {
-   position: relative;
-  align-items:flex-end;
+  .main-container .center {
+    position: relative;
+    align-items: flex-end;
     text-align: center;
     margin-bottom: 2em;
     font-size: 38px;
-    
+  }
+  .sidenav-link-container {
+    padding-inline: 20%;
   }
 
-  .shifted {
-
-  }
   #hi-word {
-   
     font-size: 30px;
   }
-  
+
   .menu-button {
     display: block;
     position: fixed;
@@ -662,23 +615,16 @@ form{
   #Certifications {
     padding: 1em;
     margin-left: 0;
-    font-size:1rem;
-  }
-
-  .my-projects {
-    margin-left: 10px;
+    font-size: 1rem;
   }
 
   .project-image {
     height: 25vh;
-    width:70vw;
-  
-
+    width: 70vw;
   }
   .discription {
-   height: 9em;
+    height: 9em;
   }
-
 
   .arrow {
     font-size: 2.5rem;
@@ -689,12 +635,12 @@ form{
     color: white;
   }
 
-  .links>a{
+  .links > a {
     font-size: 1rem;
     padding-right: 1em;
     padding-left: 1em;
   }
- 
+
   .image-toggle {
     display: flex;
     background-color: var(--darkGray);
@@ -702,113 +648,95 @@ form{
     height: fit-content;
     justify-content: center;
     flex-direction: column;
-   
   }
 
-  .art-image{
-    position:absolute;
+  .art-image {
+    position: absolute;
     object-fit: cover;
     width: 10em;
-    
   }
 
-  #my-art{
+  #my-art {
     display: flex;
     justify-content: center;
     margin-bottom: 10em;
     padding-bottom: 8em;
-
   }
-  #coffee{
-    width:9em;
+  #coffee {
+    width: 9em;
     height: auto;
 
-  transform: translate(0em, 0em);  
+    transform: translate(0em, 0em);
   }
- 
-  #aqua{
-    transform: translate(-3em, 2em);  
+
+  #aqua {
+    transform: translate(-3em, 2em);
     height: 8em;
-    width:13em;
-
+    width: 13em;
   }
-  #bunny{
-    height:8em;
-    transform: translate(4em, -3em);  
-
-
+  #bunny {
+    height: 8em;
+    transform: translate(4em, -3em);
   }
-  #art{
-    height:10em;
+  #art {
+    height: 10em;
     width: 9em;
 
-
-    transform: translate(5em, 4em);  
+    transform: translate(5em, 4em);
   }
-  #free{
-    transform: translate(-3em, 8em);  
-    height:10em;
-
+  #free {
+    transform: translate(-3em, 8em);
+    height: 10em;
   }
-  #bee{
-    transform: translate(-5em, -2em);  
-width:8em;
-height: 10em;
+  #bee {
+    transform: translate(-5em, -2em);
+    width: 8em;
+    height: 10em;
   }
-#icon-1{
-  width: 100%;
-  height: auto;
-}
-
-
-
-form{
-
-  :first-child{
-    display: grid;
-    flex-direction: column;
-    justify-content: space-between;
-    
-  }
-  :nth-child(2){
-    margin-left:4em;
+  #icon-1 {
+    width: 100%;
+    height: auto;
   }
 
-  textarea{
-    min-width: 85vw;
-    min-height: 15rem;
-  
+  form {
+    :first-child {
+      display: grid;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    :nth-child(2) {
+      margin-left: 4em;
+    }
+
+    textarea {
+      min-width: 85vw;
+      min-height: 15rem;
+    }
+    #subject {
+      min-width: 85vw;
+      margin-bottom: 2rem;
+    }
+
+    input {
+      margin-bottom: 0.5rem;
+    }
+    .input {
+      min-width: 84vw;
+
+      height: 3rem;
+    }
+
+    button {
+      float: left;
+      margin-bottom: 5em;
+    }
   }
-  #subject{
-    min-width: 85vw;
-    margin-bottom:2rem ;
+
+  #image-map {
+    top: 0;
+    max-width: 90vw;
+    min-height: 80vh;
+    object-position: left top;
+    margin-left: 0;
   }
-
-  input{
-    margin-bottom: .5rem;
-
-  }
-  .input{
-    min-width: 84vw;
-
-    height: 3rem;
-  
-  }
-
-  button{
-     float: left;
-     margin-bottom: 5em;
-  }
-
-}
-
-
-#image-map{
-  top:0;
-  max-width:90vw;
-  min-height: 80vh;
-  object-position: left top;
-  margin-left: 0;
-  
-}
 }
